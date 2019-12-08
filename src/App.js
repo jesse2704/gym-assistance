@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+import './components/home/home.css';
+import './components/navbar/navbar.css';
 import './App.css';
 import fire from './config/Fire';
 import Home from './components/home/home';
