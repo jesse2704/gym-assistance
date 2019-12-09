@@ -1,0 +1,41 @@
+.workout {
+    &__title {
+        font-size: 30px;
+        margin: 40px 0 0 10px;
+        font-weight: bolder;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 10px 0 10px;
+    }
+
+    &__subtitle {
+        margin: 20px 0 15px 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__button {
+        width: 100%;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    &__myworkouts {
+        width: 100%;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    &__icon {
+        height: 100%;
+        margin: 10px 5px 0 0;
+    }
+}
+
+.myworkout {
+    display: flex;
+    flex-direction: row;
+}
