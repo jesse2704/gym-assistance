@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import fire from '../../config/Fire';
+import logo from '../../resources/img/logo.png';
+import Footer from '../footer/footer';
+import './login.css';
 
 class Login extends Component {
   constructor(props) {
@@ -20,38 +23,42 @@ class Login extends Component {
 
   login(e) {
     e.preventDefault();
-    fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
+    fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
     }).catch((error) => {
-        console.log(error)
-      });
+      console.log(error)
+    });
   }
 
-  signup(e){
+  signup(e) {
     e.preventDefault();
-    fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
-    }).then((u)=>{console.log(u)})
-    .catch((error) => {
+    fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
+    }).then((u) => { console.log(u) })
+      .catch((error) => {
         console.log(error);
       })
   }
   render() {
     return (
-       <div className="col-md-6">
-       <form>
-      <div class="form-group">
-       <label for="exampleInputEmail1">Email address</label>
-       <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-       <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+      <div className="col-md-6 login">
+        <div className="App-container">
+          <img className="App-logo" src={logo} />
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div className="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+          </div>
+          <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
+          <button onClick={this.signup} style={{ marginLeft: '25px' }} className="btn btn-light">Signup</button>
+        </form>
+        <Footer />
       </div>
-       <div className="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-      </div>
-      <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
-      <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
- </form>
- 
- </div>
     );
   }
 }
