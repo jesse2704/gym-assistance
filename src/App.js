@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Router, Route, Switch } from "react-router";
 import 'bootstrap/dist/css/bootstrap.css';
 import './components/home/home.css';
 import './components/navbar/navbar.css';

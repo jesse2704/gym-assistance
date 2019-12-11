@@ -35,8 +35,8 @@ class workout extends Component {
                 <div className="workout__container">
                     <div className="myworkout">
                         <h2 className="workout__myworkouts">My workouts</h2>
-                        <img className="workout__icon" src={add}></img>
-                        <img className="workout__icon" src={folder}></img>
+                        <img className="workout__icon" src={add} alt="add"></img>
+                        <img className="workout__icon" src={folder} alt="folder"></img>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import fire from '../../config/Fire';
 import logo from '../../resources/img/logo.png';
 import Footer from '../footer/footer';
@@ -41,7 +40,7 @@ class Login extends Component {
     return (
       <div className="col-md-6 login">
         <div className="App-container">
-          <img className="App-logo" src={logo} />
+          <img className="App-logo" src={logo} alt="logo" />
         </div>
 
         <form>

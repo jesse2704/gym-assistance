@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Workout from '../pages/workout/workout';
 import './addWorkout.scss';
 
 class addWorkout extends Component {
@@ -9,7 +8,7 @@ class addWorkout extends Component {
     }
     
     checkCurrentTime = () => {
-        const date = new Date;
+        const date = new Date();
         const currentHour = date.getHours();
 
         if (currentHour >= 0 && currentHour < 12) {
