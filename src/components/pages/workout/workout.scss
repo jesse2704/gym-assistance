@@ -1,4 +1,5 @@
 .workout {
+
     &__title {
         font-size: 30px;
         margin: 40px 0 0 10px;
@@ -33,9 +34,17 @@
         height: 100%;
         margin: 10px 5px 0 0;
     }
+
+    &__block {
+        height: 100vh;
+        background-color: black;
+        position: absolute;
+        width: 100%;
+    }
 }
 
 .myworkout {
     display: flex;
     flex-direction: row;
 }
+

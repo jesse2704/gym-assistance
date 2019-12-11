@@ -38,6 +38,13 @@
   margin: 10px 5px 0 0;
 }
 
+.workout__block {
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+}
+
 .myworkout {
   display: -webkit-box;
   display: -ms-flexbox;
