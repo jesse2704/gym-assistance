@@ -16,37 +16,30 @@ export default class navbar extends Component {
                     <ul className="navbar-nav">
                         <Link to="/user_page">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <img className="nav-logo" src={user} />
+                                    <img className="nav-logo" src={user} alt="user"/>
                                     <span className="nav-text">You</span>
-                                </a>
                             </li>
                         </Link>
                         <Link to="/track_progress">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <img className="nav-logo" src={track} />
+                                    <img className="nav-logo" src={track} alt="track"/>
                                     <span className="nav-text">Track</span>
-                                </a>
+
                             </li>
                         </Link>
                         <Link to="/workout">
                             <li className="nav-item">
-                                <img className="nav-logo" src={add} />
+                                <img className="nav-logo" src={add} alt="add"/>
                                 <span className="nav-text">Workout</span>
                             </li>
                         </Link>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <img className="nav-logo" src={maxpr} />
+                                <img className="nav-logo" src={maxpr} alt="max"/>
                                 <span className="nav-text">MAX</span>
-                            </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <img className="nav-logo" src={track} />
+                                <img className="nav-logo" src={track} alt="track"/>
                                 <span className="nav-text">Test</span>
-                            </a>
                         </li>
                     </ul>
                 </nav>
