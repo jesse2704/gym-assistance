@@ -1,10 +1,5 @@
 import React, { Component } from 'react'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Workout from '../pages/workout/workout';
 import maxpr from '../../resources/img/max.png'
 import track from '../../resources/img/track.png'
